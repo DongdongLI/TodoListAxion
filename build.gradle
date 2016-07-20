@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+group = 'TodoListAxon'
+version = '0.0.1'
+
+description = """TodoListAxon"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	jcenter()
+    mavenCentral() 		
+    //maven { url "http://repo.maven.apache.org/maven2" }
+ }
+
+dependencies {
+      compile group: 'org.axonframework', name: 'axon-core', version: '2.0.6'
+      compile group: 'org.axonframework', name: 'axon-test', version: '2.0.6'
+}
